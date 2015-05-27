@@ -1,0 +1,41 @@
+[file_prefs]
+final_new_line=true
+ensure_convert_new_lines=false
+strip_trailing_spaces=false
+replace_tabs=false
+
+[indentation]
+indent_width=4
+indent_type=0
+indent_hard_tab_width=8
+detect_indent=true
+detect_indent_width=false
+indent_mode=2
+
+[project]
+name=Project Euler
+base_path=/home/kuba/Dokumenty/Python/Project Euler
+description=
+
+[long line marker]
+long_line_behaviour=1
+long_line_column=72
+
+[files]
+current_page=12
+FILE_NAME_0=684;Python;0;EUTF-8;0;1;0;%2Fhome%2Fkuba%2FDokumenty%2FPython%2FProject%20Euler%2F5a.py;0;4
+FILE_NAME_1=626;Python;0;EUTF-8;0;1;0;%2Fhome%2Fkuba%2FDokumenty%2FPython%2FProject%20Euler%2F14.py;0;4
+FILE_NAME_2=0;Python;0;EUTF-8;0;1;0;%2Fhome%2Fkuba%2FDokumenty%2FPython%2FProject%20Euler%2F7.py;0;4
+FILE_NAME_3=0;Python;0;EUTF-8;0;1;0;%2Fhome%2Fkuba%2FPulpit%2Fpython_modules%2Fpyserial-2.6%2Fsetup.py;0;4
+FILE_NAME_4=0;Python;0;EUTF-8;0;1;0;%2Fhome%2Fkuba%2FDokumenty%2FPython%2FProject%20Euler%2F8.py;0;4
+FILE_NAME_5=3366;Python;0;EUTF-8;0;1;0;%2Fhome%2Fkuba%2FDokumenty%2FPython%2FProject%20Euler%2F15.py;0;4
+FILE_NAME_6=780;Python;0;EUTF-8;0;1;0;%2Fhome%2Fkuba%2FDokumenty%2FPython%2FProject%20Euler%2F67.py;0;4
+FILE_NAME_7=1050;Python;0;EUTF-8;0;1;0;%2Fhome%2Fkuba%2FDokumenty%2FPython%2FProject%20Euler%2F22.py;0;4
+FILE_NAME_8=266;Python;0;EUTF-8;0;1;0;%2Fhome%2Fkuba%2FDokumenty%2FPython%2FProject%20Euler%2F22_nie_moje.py;0;4
+FILE_NAME_9=0;Python;0;EUTF-8;0;1;0;%2Fhome%2Fkuba%2FDokumenty%2FPython%2FProject%20Euler%2F18.py;0;4
+FILE_NAME_10=999;Python;0;EUTF-8;0;1;0;%2Fhome%2Fkuba%2FDokumenty%2FPython%2FProject%20Euler%2F23.py;0;4
+FILE_NAME_11=2201;Python;0;EUTF-8;0;1;0;%2Fhome%2Fkuba%2FDokumenty%2FPython%2FProject%20Euler%2F24_1.py;0;4
+FILE_NAME_12=0;PHP;0;EUTF-8;0;1;0;%2Fhome%2Fkuba%2FPulpit%2FNew;0;4
+
+[VTE]
+last_dir=/home/kuba/Dokumenty/Python/Project Euler
