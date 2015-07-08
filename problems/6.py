@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 
 # The sum of the squares of the first ten natural numbers is,
 # 12 + 22 + ... + 102 = 385
@@ -12,13 +13,11 @@
 def main():
     suma1 = 0
     suma2 = 0
-    for i in list(range(1,101)):
+    for i in list(range(1, 101)):
         #print(i ** 2)
         suma1 = suma1 + i ** 2
         suma2 = suma2 + i
-    print(suma1,suma2 ** 2)
-    print("Różnica",suma2 ** 2 - suma1 )
-    
-    
-    
+    print(suma1, suma2 ** 2)
+    print("Difference", suma2 ** 2 - suma1)
+
 main()

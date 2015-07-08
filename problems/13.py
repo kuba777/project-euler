@@ -1,7 +1,6 @@
 
-#Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
-
-
+# Work out the first ten digits of the sum of the following
+# one-hundred 50-digit numbers.
 
 
 def main():
@@ -107,11 +106,11 @@ def main():
 53503534226472524250874054075591789781264330331690'
     print(type(a), len(a))
     b = int(a)
-    suma = 0 
+    suma = 0
     l = ""
     print(type(b))
     #for i in range(0,5000,50):
-    n = 0
+    #n = 0
     for j in range(0,5000,50):
         for i in range(50):
             l = l + a[i+j]
