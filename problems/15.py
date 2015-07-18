@@ -1,15 +1,15 @@
-# Starting in the top left corner of a 2×2 grid, and only being able to move 
+# Starting in the top left corner of a 2×2 grid, and only being able to move
 # to the right and down, there are exactly 6 routes to the bottom right corner.
 # How many such routes are there through a 20×20 grid?
 
 # not finished
 
 from graphics import *
-#from random import *
+# from random import *
 import random
 
+
 def main():
-    
     def chunks(l, n):
         a = []
         for i in range(0, len(l), n):
