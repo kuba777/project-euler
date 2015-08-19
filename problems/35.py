@@ -8,6 +8,8 @@
 
 # Answer and time
 # 55 6594s
+
+
 def rot(n):
     str_n = str(n)
     ret = []

@@ -3,8 +3,8 @@
 
 a = {}
 
-for i in range(1,10001):
-    j = i -1
+for i in range(1, 10001):
+    j = i - 1
     b = []
     while j > 0:
         if i % j == 0:
