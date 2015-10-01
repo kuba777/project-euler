@@ -18,7 +18,6 @@
 #d = 983  length 982
 
 from decimal import *
-from sys import stdout
 import re
 
 getcontext().prec = 10000

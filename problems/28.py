@@ -24,27 +24,31 @@ column = 0
 
 # right down left up 
 
+
 def right(d):
-    diclk = list(d.keys())[-1] #dict last key
-    row, column = d[diclk] 
+    diclk = list(d.keys())[-1]  # dict last key
+    row, column = d[diclk]
     d[diclk + 1] = [row, column + 1]
     return d
-    
+
+
 def left(d):
-    diclk = list(d.keys())[-1] #dict last key
-    row, column = d[diclk] 
+    diclk = list(d.keys())[-1]  # dict last key
+    row, column = d[diclk]
     d[diclk + 1] = [row, column - 1]
     return d
 
+
 def up(d):
-    diclk = list(d.keys())[-1] #dict last key
-    row, column = d[diclk] 
+    diclk = list(d.keys())[-1]  # dict last key
+    row, column = d[diclk]
     d[diclk + 1] = [row + 1, column ]
     return d
 
+
 def down(d):
-    diclk = list(d.keys())[-1] #dict last key
-    row, column = d[diclk] 
+    diclk = list(d.keys())[-1]  # dict last key
+    row, column = d[diclk]
     d[diclk + 1] = [row - 1, column]
     return d
 
