@@ -16,7 +16,7 @@ import os
 
 
 def triangle_list(n):
-    """returns n triangle numbers"""
+    """returns list of n first triangle numbers"""
     tirangle_numbers = []
     for i in range(1, n + 1):
         # print(int(0.5 * i * (i + 1)))

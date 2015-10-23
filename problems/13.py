@@ -104,21 +104,16 @@ def main():
 72107838435069186155435662884062257473692284509516\
 20849603980134001723930671666823555245252804609722\
 53503534226472524250874054075591789781264330331690'
-    print(type(a), len(a))
-    b = int(a)
     suma = 0
     l = ""
-    print(type(b))
-    #for i in range(0,5000,50):
-    #n = 0
-    for j in range(0,5000,50):
+
+    for j in range(0, 5000, 50):
         for i in range(50):
             l = l + a[i+j]
-            #suma = suma + int(a[i])
-            #print(int(a[i]))
         l = int(l)
         suma = suma + l
-        #print(l,suma)
+        # print(l,suma)
         l = ""
-    print(suma)
+    print("10 first digits of sum is", str(suma)[:10])
+
 main()

@@ -32,56 +32,51 @@ def main():
     lista = []
     a = 0
     b = 0
-    for i in list(range(len(l)-1)):
-        if l[i] != " " and l[i+1] != " ":
-            print((l[i]+l[i+1]), "", end = "")
+    for i in list(range(len(l) - 1)):
+        if l[i] != " " and l[i + 1] != " ":
+            print((l[i] + l[i + 1]), "", end="")
             lista.append(int(l[i]+l[i+1]))
             a = a + 1
             if a % 20 == 0:
                 print("")
-    #print(int(lista[0]))
-    #print(len(lista))
-    #print(lista[399-39])
-    #print(a)
     for i in l:
         if i != " ":
             b = b + 1
-    #print(b)
-    
+    # print(b)
+
     def pri(row, col, lista):
         row = row - 1
         if row == 0:
             return (int(lista[col-1]))
         else:
-            return (int(lista[col-1 + row * 20])) #(col-1 + row * 10)) 
-            
-    def prod(row,col,lista):
+            return (int(lista[col-1 + row * 20]))  # (col-1 + row * 10))
+
+    def prod(row, col, lista):
         up, down, left, right = 1, 1, 1, 1
         d1, d2, d3, d4 = 1, 1, 1, 1
-        for i in [0,1,2,3]:
+        for i in [0, 1, 2, 3]:
             up = up * pri(row - i, col, lista)
             down = down * pri(row + i, col, lista)
             left = left * pri(row, col - i, lista)
             right = right * pri(row, col + i, lista)
-            d1 = d1 * pri(row+i,col+i,lista)
-            d2 = d2 * pri(row-i,col+i,lista)
-            d3 = d3 * pri(row+i,col-i,lista)
-            d4 = d4 * pri(row-i,col-i,lista)
-            
-        return up, down, left, right, d1 ,d2, d3, d4
-    #pri(1,1,lista)
+            d1 = d1 * pri(row + i, col + i, lista)
+            d2 = d2 * pri(row - i, col + i, lista)
+            d3 = d3 * pri(row + i, col - i, lista)
+            d4 = d4 * pri(row - i, col - i, lista)
+        return up, down, left, right, d1, d2, d3, d4
+
+    # pri(1,1,lista)
     l1 = []
-    for i in list(range(4,18)):
+    for i in list(range(4, 18)):
         print("")
-        for j in list(range(4,18)):
-            print(pri(i,j,lista),"",end="")
-            for k in [0,1,2,3,4,5]:
-                l1.append(prod(i,j,lista)[k])
+        for j in list(range(4, 18)):
+            print(pri(i, j, lista), "", end="")
+            for k in [0, 1, 2, 3, 4, 5]:
+                l1.append(prod(i, j, lista)[k])
     print()
-    #print(l1)
+    # print(l1)
     print(max(l1))
-    print(type(prod(4,4,lista)))
-    print(type(pri(4,4,lista)))
-    #print(a)
-    #print(lista[30])
+    # print(type(prod(4, 4, lista)))
+    # print(type(pri(4, 4, lista)))
+
 main()

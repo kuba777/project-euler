@@ -3,12 +3,14 @@
 
 # What is the sum of the digits of the number 2^1000?
 
+# 1366
+
 
 def main():
     a = 2 ** 1000
-    print(a)
+    # print(a)
     b = str(a)
-    print(len(b))
+    # print(len(b))
     # print(len(a))
     c = 0
     for i in range(len(b)):

@@ -14,24 +14,33 @@
 
 # NOTE: Once the chain starts the terms are allowed to go above one million.
 
-# 837799 525
+# 837799(525) 60s
 
 
-def main():
-    big = 0
-    big1 = 0
-    for m in range(800000, 900000):
-        n = m
-        i = 1
-        while n != 1:
-            if n % 2 == 0:
-                n = n//2
-            else:
-                n = 3 * n + 1
-            i = i + 1
-        if big < i:
-            big1 = m
-        big = max(big, i)
-        # print(m,i)
-    print(big1, big)
-main()
+count = 0
+
+
+def Collatz(n):
+    global count
+    count = count + 1
+    # print(count, n)
+    if n == 1:
+        return 1
+    if n % 2 == 0:
+        return Collatz(n // 2)
+    else:
+        return Collatz(3 * n + 1)
+
+# Collatz(13)
+# print("count", count)
+
+maximum = [0, 0]
+for i in range(1, 1000001):
+    Collatz(i)
+    # print (i, count)
+    if maximum[0] < count:
+        maximum = [count, i]
+    count = 0
+
+print("number", maximum[1])
+print("chain length", maximum[0])
