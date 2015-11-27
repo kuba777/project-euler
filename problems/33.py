@@ -16,10 +16,10 @@
 
 product = []
 
-for i in range(10,100):
-    for j in range(10,100):
+for i in range(10, 100):
+    for j in range(10, 100):
         a, b = str(i)[0], str(i)[1]
-        c ,d = str(j)[0], str(j)[1]
+        c, d = str(j)[0], str(j)[1]
         frac = "01"
         if a == d and int(a) != 0 and int(c) != 0 and b != c:
             frac = (b + "/" + c, int(b)/int(c))
@@ -27,7 +27,6 @@ for i in range(10,100):
             frac = (a + "/" + d, int(a)/int(d))
         if int(a+b)/int(c+d) == frac[1] and frac[1] < 1:
             print (a+b+"/"+c+d, i/j, frac[1])
-            
             product.append(frac[1])
 print(product)
 prod = 1

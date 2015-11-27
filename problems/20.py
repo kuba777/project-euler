@@ -8,7 +8,8 @@
 
 # Find the sum of the digits in the number 100!
 
-# 648
+# Answer and time
+# 648, 0.0s
 
 
 def factorial(n):

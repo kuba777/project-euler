@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 # The following iterative sequence is defined for the set of positive integers:
 
@@ -14,7 +16,8 @@
 
 # NOTE: Once the chain starts the terms are allowed to go above one million.
 
-# 837799(525) 60s
+# Answer and time
+# 837799(525), 60s
 
 
 count = 0

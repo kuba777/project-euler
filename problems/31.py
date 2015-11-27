@@ -8,7 +8,8 @@
 
 # 1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p
 # How many different ways can £2 be made using any number of coins?
-# 73682 3 godziny :)
+
+# 73682 3h :)
 
 from random import *
 from decimal import *

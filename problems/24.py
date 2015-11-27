@@ -9,14 +9,15 @@
 # What is the millionth lexicographic permutation of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9?
 
 
-# 2783915460 mathematica
-# [2, 7, 8, 3, 9, 1, 5, 4, 6, 0] 11.7s
+# Answer and time
+# 2783915460, 11.7s
 
 
 def lex_permutation():
     lista = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     lista_temp = lista[:]
     listy = []
+
     # number of permutations
     n_of_perm = {1: 1, 2: 2}
     for i in range(2, 12):
@@ -88,15 +89,7 @@ def beginning(lista, n, p):  # move n to p position of list
     return lista
 
 
-def lenn(lista, n):
-    lista_temp = lista[:]
-    pop = lista_temp.pop(n)
-    lista_temp.insert(n, pop)
-    # listy.append(lista1)
-    return lista_temp
-
-
-def permutation(lista, position):
+def permutation(lista, position):  # moves number at position to position + 1
     temp = lista[position]
     lista[position] = lista[position+1]
     lista[position+1] = temp

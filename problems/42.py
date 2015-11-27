@@ -11,7 +11,6 @@
 # common English words, how many are triangle words?
 
 
-import string
 import os
 
 

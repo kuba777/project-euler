@@ -24,9 +24,7 @@ def is_prime(n):
 
 
 def primes(n):
-    """
-    returns list of first n primes
-    """
+    """returns list of first n primes"""
     primes = []
     i = 2
     while len(primes) < n:
@@ -37,9 +35,7 @@ def primes(n):
 
 
 def turncate_prime(n):
-    """
-    checks if prime number is 'truncatable'
-    """
+    """checks if prime number is 'truncatable'"""
     number = str(n)
     if "0" in number:
         return False

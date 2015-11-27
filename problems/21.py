@@ -11,7 +11,7 @@
 
 # Evaluate the sum of all the amicable numbers under 10000.
 
-
+# Answer and time
 # 31626 56s
 
 a = {}

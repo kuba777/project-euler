@@ -18,7 +18,7 @@
 
 # Find the sum of all the positive integers which cannot be written as the sum of two abundant numbers.
 
-
+# Answer and time
 # 4179871 87s
 
 
@@ -54,16 +54,13 @@ def abb():
             suma.add(i+j)
     # print (suma)
     suma2 = 0
-    # for i in abundant:
-     #   for j in abundant:
-       #     print(i+j)
-    for i in range(0,28124):
+    for i in range(0, 28124):
         if i not in suma:
             suma2 += i
     print (suma2)
-    
-    
+
+
 def main():
     from timeit import Timer
-    print (Timer('abb()', 'from __main__ import abb').timeit(1))    
+    print (Timer('abb()', 'from __main__ import abb').timeit(1))
 main()

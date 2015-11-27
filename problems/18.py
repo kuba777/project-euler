@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 # By starting at the top of the triangle below and moving to adjacent numbers on the row below,
 # the maximum total from top to bottom is 23.
@@ -54,7 +56,7 @@ def main():
 
         a = Text(Point(0, lines + 1), c)
         a.setStyle('normal')
-        b = Text(Point(2, lines + 1), c[0])
+        # b = Text(Point(2, lines + 1), c[0])
         if lines == 10:
             a.setStyle('bold')
             a.setTextColor('red')

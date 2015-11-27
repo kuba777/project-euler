@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 # Using names.txt (right click and 'Save Link/Target As...'), a 46K text
 # file containing over five-thousand first names, begin by sorting it into alphabetical order.
@@ -10,8 +12,8 @@
 
 # What is the total of all the name scores in the file?
 
-
-# 871198282
+# Answer and time
+# 871198282, 0.1s
 
 import os
 

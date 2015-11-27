@@ -13,16 +13,16 @@
 # A leap year occurs on any year evenly divisible by 4, but not on a century unless it is divisible by 400.
 # How many Sundays fell on the first of the month during the twentieth century (1 Jan 1901 to 31 Dec 2000)?
 
-
-# 171
+# Answer and time
+# 171, 0.6s
 
 
 def leap(year):
         if year % 100 != 0 and year % 4 == 0 or year % 400 == 0:
-            # print "przestepny"
+            # print "leap"
             return True
         else:
-            # print "zwykly"
+            # print "no leap"
             return False
 
 
@@ -50,7 +50,8 @@ for i in range(1901, 2001):
             week1 = week1 + week
         # print(day,len(week1))
         if week1[day] == 'Nie':
-            # p rint ('Nie')
+            # print ('Nie')
             niedziela += 1
-print ('number of days in 20th century is', day)
-print('number of Sundays', niedziela)
+
+print ('number of days in 20th century:', day)
+print('number of Sundays:', niedziela)

@@ -6,7 +6,7 @@
 
 # What is the largest n-digit pandigital prime that exists?
 
-# 7652413 too slow
+# 7652413 too slow :)
 
 
 def is_prime(n):
@@ -29,6 +29,6 @@ def is_pandigital(n):
     else:
         return True
 
-for i in range(11, 10000000):
+for i in range(11, 1000000):
     if is_prime(i) and is_pandigital(i):
         print(i)
